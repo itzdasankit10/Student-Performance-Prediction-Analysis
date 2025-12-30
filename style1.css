@@ -1,0 +1,18 @@
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    background: rgba(rgb(92, 121, 91), green, rgb(35, 35, 198), alpha);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.result-card{
+    font-size: 60px;
+}

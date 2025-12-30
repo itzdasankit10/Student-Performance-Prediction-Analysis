@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <form id="predictform">
+        <div class="first">
+            <div>
+                <h3>Select Gender</h3>
+                <input type="radio" name="Gender" value="Male"> male
+                <input type="radio" name="Gender" value="Female"> female
+            </div>
+            <div>
+                <h3>Ethnic-Group
+                    <input type="radio" name="EthnicGroup" value="Group A"> Group A
+                    <input type="radio" name="EthnicGroup" value="Group B"> Group B
+                    <input type="radio" name="EthnicGroup" value="Group C"> Group C
+                    <input type="radio" name="EthnicGroup" value="Group D"> Group D
+                    <input type="radio" name="EthnicGroup" value="Group E"> Group E
+                    <input type="radio" name="EthnicGroup" value="Unknown"> Unknown
+                </h3>
+            </div>
+            <div>
+                <h3>Parent's Education</h3>
+                <input type="radio" name="ParentEdc" value="some high school"> Some High School
+                <input type="radio" name="ParentEdc" value="high school"> High School
+                <input type="radio" name="ParentEdc" value="some college"> Some College
+                <input type="radio" name="ParentEdc" value="associate's Degree"> Associate's Degree
+                <input type="radio" name="ParentEdc" value="bachelor's Degree"> Bachelor's Degree
+                <input type="radio" name="ParentEdc" value="master's Degree"> Master's Degree
+                <input type="radio" name="ParentEdc" value="Unknown"> Unknown
+            </div>
+            <div>
+                <h3>Lunch Type</h3>
+                <input type="radio" name="LunchType" value="Standard"> standard
+                <input type="radio" name="LunchType" value="Free"> free
+            </div>
+            <div>
+                <h3>Test Preparation</h3>
+                <input type="radio" name="TestPrep" value="None"> none
+                <input type="radio" name="TestPrep" value="Completed"> Completed
+                <input type="radio" name="TestPrep" value="Unknown"> Unknown
+            </div>
+            <div>
+                <h3>Parent-Marital Status</h3>
+                <input type="radio" name="ParentMaritalStatus" value="Married"> Married
+                <input type="radio" name="ParentMaritalStatus" value="Single"> Single
+                <input type="radio" name="ParentMaritalStatus" value="Divorced"> Divorced
+                <input type="radio" name="ParentMaritalStatus" value="Widowed"> Widowed
+                <input type="radio" name="ParentMaritalStatus" value="Unknown"> Unknown
+            </div>
+            <div>
+                <h3>Practices Sport</h3>
+                <input type="radio" name="PracticeSprt" value="Regularly"> Regularly
+                <input type="radio" name="PracticeSprt" value="Sometimes"> Sometimes
+                <input type="radio" name="PracticeSprt" value="Never"> Never
+                <input type="radio" name="PracticeSprt" value="Unknown"> Unknown
+            </div>
+            <div>
+                <h3>Are you the First Child?</h3>
+                <input type="radio" name="IsFirstChild" value="Yes"> Yes
+                <input type="radio" name="IsFirstChild" value="No"> No
+                <input type="radio" name="IsFirstChild" value="Unknown"> Unknown
+            </div>
+            <div>
+                <h3>No. Of Siblings</h3>
+                <input type="number" name="NrSibling">
+            </div>
+            <div>
+                <h3>Transport Means</h3>
+                <input type="radio" name="TransportMeans" value="School Bus"> School Bus
+                <input type="radio" name="TransportMeans" value="Private"> Private
+                <input type="radio" name="TransportMeans" value="Unknown"> Unknown
+            </div>
+            <div>
+                <h3>Weekly Study Hours</h3>
+                <input type="radio" name="WklyStudyHours" value="<5"> &lt;5 hours
+                <input type="radio" name="WklyStudyHours" value="5-10"> 5-10 hours
+                <input type="radio" name="WklyStudyHours" value=">10"> &gt;10 hours
+                <input type="radio" name="WklyStudyHours" value="Unknown"> Unknown
+            </div>
+            <div>
+                <button type="submit">CALCULATE</button>
+            </div>
+
+            <div>
+                <h2>CALCULATE</h2>
+            </div>
+            <div>RESULT IS - <textarea name="value" id=""></textarea></div>
+        </div>
+    </form>
+
+    <div id="result" class="overlay" style="display: none;">
+        <div class="result-card">
+            <h1 id="result-label"></h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
